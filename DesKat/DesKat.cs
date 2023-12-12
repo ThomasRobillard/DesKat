@@ -1,8 +1,8 @@
 namespace DesKat
 {
-    public partial class Form1 : Form
+    public partial class DesKat : Form
     {
-        public Form1()
+        public DesKat()
         {
             InitializeComponent();
         }

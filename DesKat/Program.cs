@@ -1,3 +1,7 @@
+using Shell32;
+using System.Runtime.InteropServices;
+
+
 namespace DesKat
 {
     internal static class Program
@@ -10,8 +14,10 @@ namespace DesKat
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+          
+        Console.ReadKey();
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new DesKat());
         }
     }
 }

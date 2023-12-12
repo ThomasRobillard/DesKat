@@ -31,5 +31,19 @@ namespace DesKat
         {
             throw new NotImplementedException();
         }
+
+        public void RenameItem(string name, string newName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteItem()
+        {
+            throw new NotImplementedException();
+        }
+        public void CopyItem(string source, string destination)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

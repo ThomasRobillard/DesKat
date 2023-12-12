@@ -1,8 +1,4 @@
 # DesKat
 A desktop manager for Windows
 
-Here is the explaination of how I met the project requirements.
-
-
-## Subheader
-Polymorphism
+Unfinished -- need to find a way to record desktop icon locations

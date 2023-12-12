@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Shell32;
 
 namespace DesKat
 {
@@ -70,7 +71,7 @@ namespace DesKat
             throw new NotImplementedException();
         }
 
-        public void Sort(SortType sortType)
+        public void Sort(string sortType)
         {
             throw new NotImplementedException();
         }

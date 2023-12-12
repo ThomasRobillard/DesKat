@@ -1,0 +1,128 @@
+<Project>
+  <Name>DesKat</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.ClassDiagram" assembly="NClass.DiagramEditor, Version=2.8.0.1, Culture=neutral, PublicKeyToken=null">
+    <Name>DesKat</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Desktop</Name>
+        <Access>Public</Access>
+        <Location left="407" top="176" />
+        <Size width="309" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Icon&gt; _icons</Member>
+        <Member type="Field">private string _backgroundImage</Member>
+        <Member type="Property">public List&lt;Icon&gt; Icons { get; set; }</Member>
+        <Member type="Property">public string BackgroundImage { get; set; }</Member>
+        <Member type="Method">public void SaveLayout()</Member>
+        <Member type="Method">public void LoadLayout()</Member>
+        <Member type="Method">public void RandomizeIcons()</Member>
+        <Member type="Method">public void CreateFolder(string name)</Member>
+        <Member type="Method">public void PreviewFile(string name)</Member>
+        <Member type="Method">public void DragAndDrop(string name, string destination)</Member>
+        <Member type="Method">public void Search(string query)</Member>
+        <Member type="Method">public void Sort(SortType sortType)</Member>
+        <Member type="Method">public void ChangeBackground(string imagePath)</Member>
+        <Member type="Method">public void CustomizeSettings()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Icon</Name>
+        <Access>Public</Access>
+        <Location left="1067" top="35" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected string _name</Member>
+        <Member type="Field">protected string _path</Member>
+        <Member type="Property">public string Name { get; set; }</Member>
+        <Member type="Property">public string Path { get; set; }</Member>
+        <Member type="Method">public void Move(string location)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Folder</Name>
+        <Access>Public</Access>
+        <Location left="855" top="253" />
+        <Size width="183" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;File&gt; _files</Member>
+        <Member type="Property">public List&lt;File&gt; Files { get; set; }</Member>
+        <Member type="Method">public void AddFile(File file)</Member>
+        <Member type="Method">public void RemoveFile(File file)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>File</Name>
+        <Access>Public</Access>
+        <Location left="1295" top="253" />
+        <Size width="178" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private string _fileType</Member>
+        <Member type="Property">public string FileType { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IModifiable</Name>
+        <Access>Public</Access>
+        <Location left="1030" top="530" />
+        <Size width="296" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void RenameItem(string name, string newName)</Member>
+        <Member type="Method">void DeleteItem()</Member>
+        <Member type="Method">void CopyItem(string name, string destination)</Member>
+      </Entity>
+    </Entities>
+    <Containers />
+    <Relationships>
+      <Relationship type="Association" first="2" second="3">
+        <Label>contains</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>940</X>
+          <Y>157</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1028</X>
+          <Y>157</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1380</X>
+          <Y>158</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1259</X>
+          <Y>158</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="2" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>938</X>
+          <Y>642</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="3" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1382</X>
+          <Y>635</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
